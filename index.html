@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB ON OFF</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ecf0f3;
+
+    }
+    .container{
+        
+        height: 500px;
+        width: 350px;
+        border-radius: 20px;
+        background: #ecf0f3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    
+    }
+    button{
+        margin-bottom: -150px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <button onclick="bulbOff()">Light off</button>
+        <img id="bulb" src="pic_bulboff.gif">
+        <button onclick="bulbOn()">Light on</button>
+    </div>
+
+    <script>
+        let bulbPic = document.getElementById("bulb");
+         function bulbOff(){
+             bulbPic.src = "pic_bulboff.gif";
+         }
+         function bulbOn(){
+             bulbPic.src = "pic_bulbon.gif";
+         }
+    </script>
+    
+</body>
+</html>
